@@ -16,7 +16,7 @@
 			<th>OPSI</th>
 		</tr>
 		<?php
-		include 'koneksi.php';
+		include '../config/koneksi.php';
 		$no = 1;
 		$data = mysqli_query($koneksi,"select * from user");
 		while($d = mysqli_fetch_array($data)){

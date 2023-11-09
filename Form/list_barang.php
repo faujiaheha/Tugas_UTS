@@ -19,7 +19,7 @@
             <th>Id Kategori</th>
         </tr>
         <?php
-            include 'koneksi.php';
+            include '../config/koneksi.php';
             $no = 1;
             $data = mysqli_query($koneksi,"Select * from barang");
             while($d = mysqli_fetch_array($data)){
